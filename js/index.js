@@ -21,18 +21,22 @@ function func(n) {
 alert(func(n)); 
 
 
+//3 recur
 
-// function fib2(n) { 
-//   if (n >= 1) {
-//   return fib2(n - 1) + fib2(n - 2);
-//   // return n <= 1 ? n: fib2(n - 1) + fib2(n - 2);
-//   }
-// }
-// alert(fib2(n));
+function fib1(n){
+    if(n==0) return 0;
+    if(n==1) return 1;
+    return fib1(n-2)+ fib1(n-1);
+}
 
-//array
-// let fibArr = [1, 1];
-// for (n = 0; n < fibArr.length; n++) {
-//   fibArr.push(fibArr[fibArr.length - 1] + fibArr[fibArr.length - 2]);
-// }
-// alert (fibArr.push[n]);
+alert(fib1(n));
+
+
+//4 array
+let fibArr = [1, 1];
+for(let i = 0; i < n-2; i++) {
+  fibArr.push(fibArr[fibArr.length - 1] + fibArr[fibArr.length - 2]);
+ 
+}
+ document.write(fibArr);
+
